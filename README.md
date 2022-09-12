@@ -1,2 +1,2 @@
-# btech
-Course materials for B.Tech,, Electronics and Communication course in AKTU.
+##B.Tech
+Course materials for B.Tech, Electronics and Communication branch in AKTU.
