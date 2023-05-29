@@ -1,0 +1,41 @@
+
+**** 05/29/23 21:51:58 ******* PSpice Lite (April 2011) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-ac_analysis"  [ C:\Users\Public\Downloads\CAD\Filters-PSpiceFiles\SCHEMATIC1\ac_analysis.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "ac_analysis.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC DEC 10 0 1000
+-----------$
+ERROR(ORPSIM-16103): Invalid value
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source FILTERS
+R_R1         N00128 N00139  3.3k TC=0,0 
+C_C1         0 N00139  0.01u  TC=0,0 
+V_V1         N00128 0 DC 0Vdc AC 1Vac 
+
+**** RESUMING ac_analysis.cir ****
+.END
+

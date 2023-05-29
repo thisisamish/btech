@@ -1,0 +1,132 @@
+
+**** 05/29/23 23:48:39 ******* PSpice Lite (April 2011) ******* ID# 10813 ****
+
+ ** Profile: "NMOS_TRANSIENT_ANALYSIS-transient_analysis"  [ C:\Users\Public\Downloads\CAD\MOSFET-PSpiceFiles\NMOS_TRANSIENT_ANALYSIS
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "transient_analysis.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 8us 0 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\NMOS_TRANSIENT_ANALYSIS.net" 
+
+
+
+**** INCLUDING NMOS_TRANSIENT_ANALYSIS.net ****
+* source MOSFET
+M_M1         N000512 N00217 0 0 MbreakN           
+V_V1         N00224 0 5Vdc
+R_R1         N000512 N00224  1k TC=0,0 
+V_V2         N00217 0  
++PULSE 0 5V 0 20n 20n 2u 4u
+
+**** RESUMING transient_analysis.cir ****
+.END
+
+**** 05/29/23 23:48:39 ******* PSpice Lite (April 2011) ******* ID# 10813 ****
+
+ ** Profile: "NMOS_TRANSIENT_ANALYSIS-transient_analysis"  [ C:\Users\Public\Downloads\CAD\MOSFET-PSpiceFiles\NMOS_TRANSIENT_ANALYSIS
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               MbreakN         
+               NMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO    0            
+          KP   20.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          IS   10.000000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO    0            
+        CGDO    0            
+        CGBO    0            
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 05/29/23 23:48:39 ******* PSpice Lite (April 2011) ******* ID# 10813 ****
+
+ ** Profile: "NMOS_TRANSIENT_ANALYSIS-transient_analysis"  [ C:\Users\Public\Downloads\CAD\MOSFET-PSpiceFiles\NMOS_TRANSIENT_ANALYSIS
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00217)    0.0000 (N00224)    5.0000 (N000512)    5.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -5.010E-12
+    V_V2         0.000E+00
+
+    TOTAL POWER DISSIPATION   2.51E-11  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 05/29/23 23:48:39 ******* PSpice Lite (April 2011) ******* ID# 10813 ****
+
+ ** Profile: "NMOS_TRANSIENT_ANALYSIS-transient_analysis"  [ C:\Users\Public\Downloads\CAD\MOSFET-PSpiceFiles\NMOS_TRANSIENT_ANALYSIS
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+

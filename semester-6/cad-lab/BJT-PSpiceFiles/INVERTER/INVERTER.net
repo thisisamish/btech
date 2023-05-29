@@ -1,0 +1,7 @@
+* source BJT
+V_V1         N00215 0 5Vdc
+V_V2         N00208 0  
++PULSE 0 5V 100n 2n 2n 2u 4u
+Q_Q1         N00200 N00204 0 Q2N2222
+R_R1         N00208 N00204  10k TC=0,0 
+R_R2         N00200 N00215  1k TC=0,0 

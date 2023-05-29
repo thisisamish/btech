@@ -1,0 +1,6 @@
+.ALIASES
+M_M1            M1(d=N00139 g=N00128 s=0 s=0 ) CN @MOSFET.SCHEMATIC1(sch_1):INS28@BREAKOUT.MbreakN3.Normal(chips)
+R_R1            R1(1=N00139 2=N00143 ) CN @MOSFET.SCHEMATIC1(sch_1):INS55@ANALOG.R.Normal(chips)
+V_V1            V1(+=N00128 -=0 ) CN @MOSFET.SCHEMATIC1(sch_1):INS96@SOURCE.VDC.Normal(chips)
+V_V2            V2(+=N00143 -=0 ) CN @MOSFET.SCHEMATIC1(sch_1):INS112@SOURCE.VDC.Normal(chips)
+.ENDALIASES

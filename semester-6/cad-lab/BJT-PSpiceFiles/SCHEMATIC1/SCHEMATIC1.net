@@ -1,0 +1,6 @@
+* source BJT
+Q_Q1         N00148 N00137 0 Q2N2222
+R_R1         N00148 N00152  1k TC=0,0 
+R_R2         N00141 N00137  10k TC=0,0 
+V_V1         N00141 0 1Vdc
+V_V2         N00152 0 10Vdc

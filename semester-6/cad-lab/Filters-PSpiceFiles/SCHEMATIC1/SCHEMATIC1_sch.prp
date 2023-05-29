@@ -1,0 +1,83 @@
+("FILE_TYPE"	"PMAP File"
+    ("devices"
+        ("R")
+        ("C")
+        ("VAC")
+    )
+    ("instances"
+        ("R1"
+            ("device_name"	"R")
+            ("pspice_path"	"R_R1")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"3.3k")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("C1"
+            ("device_name"	"C")
+            ("pspice_path"	"C_C1")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"0.01u")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("V1"
+            ("device_name"	"VAC")
+            ("pspice_path"	"V_V1")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"0Vdc")
+                    ("pspice_param"	"DC")
+                )
+                ("ACMAG"
+                    ("value"	"10Vac")
+                    ("pspice_param"	"AC")
+                )
+            )
+        )
+        ("V2"
+            ("device_name"	"VAC")
+            ("pspice_path"	"V_V2")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"0Vdc")
+                    ("pspice_param"	"DC")
+                )
+                ("ACMAG"
+                    ("value"	"10Vac")
+                    ("pspice_param"	"AC")
+                )
+            )
+        )
+        ("R2"
+            ("device_name"	"R")
+            ("pspice_path"	"R_R2")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"3.3k")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+        ("C2"
+            ("device_name"	"C")
+            ("pspice_path"	"C_C2")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"0.01u")
+                    ("pspice_param"	"VALUE")
+                )
+            )
+        )
+    )
+)

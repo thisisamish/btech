@@ -1,0 +1,7 @@
+.ALIASES
+V_V1            V1(+=N00215 -=0 ) CN @BJT.INVERTER(sch_1):INS26@SOURCE.VDC.Normal(chips)
+V_V2            V2(+=N00208 -=0 ) CN @BJT.INVERTER(sch_1):INS79@SOURCE.VPULSE.Normal(chips)
+Q_Q1            Q1(c=N00200 b=N00204 e=0 ) CN @BJT.INVERTER(sch_1):INS141@BIPOLAR.Q2N2222.Normal(chips)
+R_R1            R1(1=N00208 2=N00204 ) CN @BJT.INVERTER(sch_1):INS168@ANALOG.R.Normal(chips)
+R_R2            R2(1=N00200 2=N00215 ) CN @BJT.INVERTER(sch_1):INS184@ANALOG.R.Normal(chips)
+.ENDALIASES

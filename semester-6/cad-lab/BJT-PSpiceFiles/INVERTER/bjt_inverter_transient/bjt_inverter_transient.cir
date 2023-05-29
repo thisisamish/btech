@@ -1,0 +1,18 @@
+** Profile: "INVERTER-bjt_inverter_transient"  [ C:\Users\Public\Downloads\CAD\BJT-PSpiceFiles\INVERTER\bjt_inverter_transient.sim ] 
+
+** Creating circuit file "bjt_inverter_transient.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 8us 0 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\INVERTER.net" 
+
+
+.END

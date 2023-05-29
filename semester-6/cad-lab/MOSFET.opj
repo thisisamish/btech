@@ -1,0 +1,96 @@
+(ExpressProject "MOSFET"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\mosfet.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (RootChangedForceReNetlist "x"))
+  (Folder "Outputs"
+    (File ".\mosfet-pspicefiles\schematic1\schematic1.net"
+      (Type "Report"))
+    (File ".\mosfet-pspicefiles\inverter\inverter.net"
+      (Type "Report"))
+    (File
+       ".\mosfet-pspicefiles\nmos_transient_analysis\nmos_transient_analysis.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\mosfet-pspicefiles\nmos_dc_analysis\input_characterstics.sim"
+        (DisplayName "NMOS_DC_ANALYSIS-input_characterstics")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\mosfet-pspicefiles\nmos_dc_analysis\transient.sim"
+        (DisplayName "NMOS_DC_ANALYSIS-transient")
+        (Type "PSpice Profile"))
+      (ActiveProfile
+         ".\mosfet-pspicefiles\nmos_transient_analysis\transient_analysis.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\mosfet-pspicefiles\nmos_transient_analysis\transient_analysis.sim"
+        (DisplayName "NMOS_TRANSIENT_ANALYSIS-transient_analysis")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (0
+      (LibraryName "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VPULSE
+      (FullPartName "VPULSE.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (MbreakN3
+      (FullPartName "MbreakN3.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" "C:\Users\Public\Downloads\CAD\mosfet.dsn")
+      (Path "Design Resources" "C:\Users\Public\Downloads\CAD\mosfet.dsn"
+         "NMOS_TRANSIENT_ANALYSIS")
+      (Path "Design Resources" "C:\Users\Public\Downloads\CAD\mosfet.dsn"
+         "NMOS_DC_ANALYSIS")
+      (Path "Outputs")
+      (Select "Design Resources" "C:\Users\Public\Downloads\CAD\mosfet.dsn"
+         "NMOS_TRANSIENT_ANALYSIS" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 250 0 676"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 26 774 26 344")
+        (Scroll "367 226")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path "C:\USERS\PUBLIC\DOWNLOADS\CAD\MOSFET.DSN")
+      (Schematic "NMOS_TRANSIENT_ANALYSIS")
+      (Page "PAGE1"))))

@@ -1,0 +1,6 @@
+* source MOSFET
+M_M1         N000512 N00217 0 0 MbreakN           
+V_V1         N00224 0 5Vdc
+R_R1         N000512 N00224  1k TC=0,0 
+V_V2         N00217 0  
++PULSE 0 5V 0 20n 20n 2u 4u
