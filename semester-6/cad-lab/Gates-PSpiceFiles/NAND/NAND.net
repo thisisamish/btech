@@ -1,0 +1,10 @@
+* source GATES
+M_M1         N00145 A N00720 N00720 MbreakN           
+M_M2         N00720 B 0 0 MbreakN           
+M_M3         N00145 A N00141 N00141 MbreakP           
+M_M4         N00145 B N00141 N00141 MbreakP           
+V_V1         A 0  
++PULSE 0 5V 0 20n 20n 2u 4u
+V_V2         B 0  
++PULSE 0 5V 1u 20n 20n 2u 4u
+V_V3         N00141 0 5Vdc

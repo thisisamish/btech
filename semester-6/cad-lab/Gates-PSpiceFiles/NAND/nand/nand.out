@@ -1,0 +1,139 @@
+
+**** 05/30/23 07:53:16 ******* PSpice Lite (April 2011) ******* ID# 10813 ****
+
+ ** Profile: "NAND-nand"  [ C:\Users\Public\Downloads\CAD\Gates-PSpiceFiles\NAND\nand.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "nand.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 8us 0 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\NAND.net" 
+
+
+
+**** INCLUDING NAND.net ****
+* source GATES
+M_M1         N00145 A N00720 N00720 MbreakN           
+M_M2         N00720 B 0 0 MbreakN           
+M_M3         N00145 A N00141 N00141 MbreakP           
+M_M4         N00145 B N00141 N00141 MbreakP           
+V_V1         A 0  
++PULSE 0 5V 0 20n 20n 2u 4u
+V_V2         B 0  
++PULSE 0 5V 1u 20n 20n 2u 4u
+V_V3         N00141 0 5Vdc
+
+**** RESUMING nand.cir ****
+.END
+
+**** 05/30/23 07:53:16 ******* PSpice Lite (April 2011) ******* ID# 10813 ****
+
+ ** Profile: "NAND-nand"  [ C:\Users\Public\Downloads\CAD\Gates-PSpiceFiles\NAND\nand.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               MbreakN         MbreakP         
+               NMOS            PMOS            
+       LEVEL    1               1            
+           L  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06 
+         VTO    0               0            
+          KP   20.000000E-06   20.000000E-06 
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA    0               0            
+          IS   10.000000E-15   10.000000E-15 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO    0               0            
+        CGDO    0               0            
+        CGBO    0               0            
+         TOX    0               0            
+          XJ    0               0            
+       UCRIT   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+
+
+**** 05/30/23 07:53:16 ******* PSpice Lite (April 2011) ******* ID# 10813 ****
+
+ ** Profile: "NAND-nand"  [ C:\Users\Public\Downloads\CAD\Gates-PSpiceFiles\NAND\nand.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    A)    0.0000  (    B)    0.0000  (N00141)    5.0000 (N00145)    5.0000     
+
+(N00720)    2.5000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_V2         0.000E+00
+    V_V3        -2.510E-12
+
+    TOTAL POWER DISSIPATION   1.26E-11  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 05/30/23 07:53:16 ******* PSpice Lite (April 2011) ******* ID# 10813 ****
+
+ ** Profile: "NAND-nand"  [ C:\Users\Public\Downloads\CAD\Gates-PSpiceFiles\NAND\nand.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .02
+
