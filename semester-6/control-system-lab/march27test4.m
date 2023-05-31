@@ -1,0 +1,14 @@
+s = tf('s');
+g1 = 2*s/(s^2 + 3);
+g2 = 4/(s + 6);
+h1 = 2/(s + 4);
+h2 = 5/(2*s + 4);
+gh2 = feedback(g2, h2, +1);
+g1gh2 = series(g1, gh2);
+g = feedback(g1gh2, h1, -1);
+disp(g);
+step(g);
+S = stepinfo(g);
+disp(S);
+b = isstable(g);
+disp(b);

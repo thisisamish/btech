@@ -1,0 +1,13 @@
+clc;
+close;
+clear;
+num = [5 15 10];
+den = [2 7 20 24 0];
+g = tf(num, den);
+pzplot(g);
+[z, p, k] = tf2zp(num, den);
+[n, d] = zp2tf(z, p, k);
+disp(z);
+disp(p);
+disp(k);
+disp(tf(n, d));

@@ -1,0 +1,13 @@
+clear;
+close;
+A = [1 10 20; 2 5 7; 7 8 9];
+tp = transpose(A);
+i = inv(A);
+r = rank(A);
+d = det(A);
+e = eig(A);
+disp(tp);
+disp(i);
+disp(r);
+disp(d);
+disp(e);

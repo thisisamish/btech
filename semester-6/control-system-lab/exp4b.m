@@ -1,0 +1,16 @@
+clc;
+close;
+clear;
+s = tf('s');
+t1 = 5;
+t2 = 1;
+t3 = 10;
+g1 = tf(t1, t2);
+g2 = tf(t3, t2);
+g3 = 1/(s^2 + s);
+g4 = parallel(g1, g2);
+g5 = series(g4, g3);
+g6 = feedback(g5, 1);
+step(g6);
+disp(g6);
+isstable(g6);

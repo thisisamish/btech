@@ -1,0 +1,11 @@
+clc;
+clear;
+close;
+s = tf('s');
+ts = s/(s^2 + 2*s + 10);
+z = zero(ts);
+p = pole(ts);
+subplot(224);
+pzplot(ts);
+disp(z);
+disp(p);
